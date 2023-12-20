@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Js</title>
+
+    <style>
+      
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="container py-5 my-5">
+        <form >
+          <label for="productName">productName</label>
+          <input type="text" id="productName"  class="form-control my-2" value="">
+
+          
+          <label for="productPrice">productPrice</label>
+          <input type="text" id="productPrice"  class="form-control my-2">
+
+          
+          <label for="productCat">productCat</label>
+          <input type="text" id="productCat"  class="form-control my-2">
+
+          
+          <label for="productDesc">productDesc</label>
+          <input type="text" id="productDesc"  class="form-control my-2">
+      
+         <button  id="btn" class="btn btn-info text-white" type="button">add Product</button>    
+        </form>
+
+        <input type="text" placeholder="serach..." class="form-control w-75 mx-auto my-3" oninput="search(this.value)">
+        
+        <table class="table my-5">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>productName</th>
+                    <th>productPrice</th>
+                    <th>productCat</th>
+                    <th>productDesc</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                </tr>
+            </thead>
+            <tbody id="tableRow">
+            
+            </tbody>
+        </table>
+    </div>
+
+    <script src="main.js">  </script>
+</body>
+
+</html>
